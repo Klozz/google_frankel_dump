@@ -1,0 +1,17 @@
+kernel=kernel
+ramdisk=ramdisk
+second=second.img
+page_size=1684107116
+dt=dtb.img
+kernel_size=4
+ramdisk_size=268468224
+second_size=23965312
+dtb_offset=0x00007800
+dtb_size=1902474079
+base_addr=0xffff8800
+kernel_offset=0x00008000
+ramdisk_offset=0x11007800
+tags_offset=0x2e30ac31
+dtbo_offset=
+cmd_line='oad_sequential=1 arm_smmu_v3_kvm.atomic_pages=5897 dyndbg="func alloc_contig_dump_pages +p" cma_sysfs.experimental=Y cgroup_disable=memory cgroup.memory=nokmem init_on_alloc=0 init_on_free=1 rcupdate.rcu_expedited=1 rcu_nocbs=all rcutree.enable_rcu_lazy swiotlb=noforce disable_dma32=on sysctl.kernel.sched_pelt_multiplier=4 aoc_core.aoc_enable_gsa_boot=1 rodata=on kasan=off at24.write_timeout=100 log_buf_len=1024K android_arch_task_struct_size=512 bootconfig'
+board="ial=1 vh_sched.l"

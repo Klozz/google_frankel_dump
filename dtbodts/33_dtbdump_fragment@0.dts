@@ -1,0 +1,44 @@
+/dts-v1/;
+
+/ {
+
+	__fixups__ {
+		dpm = "/fragment@0:target:0";
+	};
+
+	fragment@0 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			variant = "user";
+			version = <0x65>;
+
+			abl {
+				aoc_sram_dump = <0x0>;
+				apc_cache_dump = <0x0>;
+				gslc_dump = <0x0>;
+				ramdump2usb = <0x0>;
+				ramdump_mode = <0x0>;
+				tp_dram_enable = <0x0>;
+			};
+
+			feature {
+
+				dump-mode {
+					enabled = <0x1>;
+				};
+			};
+
+			security {
+				ERXPFG_enable = <0x0>;
+				cp_mem_not_clear = <0x0>;
+				dbg_mem_enable = <0x0>;
+				harxlog_enable = <0x0>;
+				pm_test_enable = <0x0>;
+				sdm_enable = <0x0>;
+				seclog_enable = <0x0>;
+				seh_enable = <0x0>;
+			};
+		};
+	};
+};
